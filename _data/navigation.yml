@@ -5,7 +5,7 @@ main:
   - title: "Projects"
     url: /projects/
   - title: "Blog"
-    url: /year-archive/
+    url: /blog/
   - title: "Industry Expertise"
     url: /industry/
   - title: "Specialties"
