@@ -1,7 +1,7 @@
 ---
 layout: home
 title: "Soumya Samuel"
-tagline: "Data Governance — Building Trust and Driving Innovation Through Scalable Data Governance, AI Maturity, and Strategic Data Management"
+tagline: "Understanding Your Data. Enhancing Your Value. Securing Your Future."
 author_profile: true
 hide_author_name: true
 header:
