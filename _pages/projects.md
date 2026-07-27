@@ -1,14 +1,15 @@
 ---
 title: "Projects"
 permalink: /projects/
-layout: single
+layout: archive
 author_profile: true
 ---
 
-Here's a summary of my hands-on data governance projects:
+Hands-on data governance projects — click through to any project for the full write-up.
 
-### OpenMetadata Governance Demo
-Brief description of what you built...
-
-### Purview Sandbox Project
-Brief description...
+{% assign projects_sorted = site.projects | sort: "date" | reverse %}
+<div class="entries-list">
+  {% for post in projects_sorted %}
+    {% include archive-single.html type="list" %}
+  {% endfor %}
+</div>
