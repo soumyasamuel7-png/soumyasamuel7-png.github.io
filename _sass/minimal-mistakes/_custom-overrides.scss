@@ -10,34 +10,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Masthead: match the dark blue banner instead of the default light bar */
+/* Masthead: keep the theme's default light bar, just a bit of lift */
 .masthead {
-  border-bottom: none;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-
-  .greedy-nav {
-    background: $brand-navy;
-  }
-
-  .site-title,
-  .site-subtitle,
-  .masthead__menu-item a {
-    color: #fff;
-  }
-
-  .masthead__menu-item a:hover {
-    color: #9fc9ff;
-  }
-
-  .greedy-nav__toggle .navicon,
-  .greedy-nav__toggle .navicon:before,
-  .greedy-nav__toggle .navicon:after {
-    background: #fff;
-  }
-
-  .search__toggle {
-    color: #fff;
-  }
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 /* Footer: same navy family for a cohesive palette top-to-bottom */
