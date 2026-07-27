@@ -20,6 +20,10 @@ html {
   background-color: $brand-navy;
 }
 
+.page__header {
+  background-color: transparent;
+}
+
 /* Author sidebar / profile card: the theme dims this to 75% opacity until
    hover, which makes the profile photo look washed out at rest. Keep it
    fully visible. */
@@ -69,10 +73,10 @@ html {
     border-radius: $border-radius;
     transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
-    /* Hover state for list items 
+    /* Hover state for list items */
     &:hover {
       background-color: mix(#fff, $brand-navy, 96%);
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    }*/
+    }
   }
 }
