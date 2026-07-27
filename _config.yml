@@ -130,7 +130,7 @@ analytics:
 author:
   name : "Soumya Samuel"
   avatar : "/assets/images/ProfilePic.png"
-  bio : "Data governance professional with 8+ years building trusted data ecosystems."
+  bio : #"Data governance professional with 8+ years building trusted data ecosystems."
   location : "San Diego, USA"
   email : "soumyasamuel7@gmail.com"
   links:
