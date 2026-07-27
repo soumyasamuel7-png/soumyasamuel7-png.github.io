@@ -1,0 +1,78 @@
+/* ==========================================================================
+   CUSTOM BRAND OVERRIDES
+   Keeps the masthead/footer in the same dark blue used in the header
+   banner, and smooths out a few default theme behaviors.
+   ========================================================================== */
+
+$brand-navy: #1b2a4a;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Masthead: match the dark blue banner instead of the default light bar */
+.masthead {
+  border-bottom: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+
+  .greedy-nav {
+    background: $brand-navy;
+  }
+
+  .site-title,
+  .site-subtitle,
+  .masthead__menu-item a {
+    color: #fff;
+  }
+
+  .masthead__menu-item a:hover {
+    color: #9fc9ff;
+  }
+
+  .greedy-nav__toggle .navicon,
+  .greedy-nav__toggle .navicon:before,
+  .greedy-nav__toggle .navicon:after {
+    background: #fff;
+  }
+
+  .search__toggle {
+    color: #fff;
+  }
+}
+
+/* Footer: same navy family for a cohesive palette top-to-bottom */
+.page__footer {
+  background-color: $brand-navy;
+}
+
+/* Author sidebar / profile card: the theme dims this to 75% opacity until
+   hover, which makes the profile photo look washed out at rest. Keep it
+   fully visible. */
+.sidebar {
+  @include breakpoint($large) {
+    opacity: 1;
+  }
+}
+
+.author__avatar img {
+  max-width: 150px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: top center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Recent posts / project list entries: subtle hover lift for a smoother feel */
+.list__item {
+  .archive__item {
+    padding: 0.75em 1em;
+    margin-inline: -1em;
+    border-radius: $border-radius;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+    &:hover {
+      background-color: mix(#fff, $brand-navy, 96%);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    }
+  }
+}

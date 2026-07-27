@@ -35,3 +35,6 @@
 @import "minimal-mistakes/archive";
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
+
+/* Custom brand overrides (keep last so they win the cascade) */
+@import "minimal-mistakes/custom-overrides";
